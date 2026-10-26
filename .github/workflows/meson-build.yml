@@ -93,7 +93,7 @@ jobs:
               f.write("\n".join(lines) + "\n")
 
       - name: Upload SBOM artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: pilot-data-sync-sbom
           path: pilot-data-sync-sbom.spdx.json
